@@ -7,7 +7,9 @@
        http://dubbo.apache.org/schema/dubbo
        http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
 
-    <!-- 服务提供者暴露服务配置 -->
+    <!-- 服务提供者暴露服务配置
+    使用 Dubbo 自定义的 Spring <dubbo:service> 标签，配置我们 UserRpcServiceImpl 成 UserRpcService 的 Dubbo 服务提供者
+    -->
     <dubbo:service ref="userRpcServiceImpl" interface="cn.iocoder.springboot.lab30.rpc.api.UserRpcService"
         version="${dubbo.provider.UserRpcService.version}" validation="true" />
 

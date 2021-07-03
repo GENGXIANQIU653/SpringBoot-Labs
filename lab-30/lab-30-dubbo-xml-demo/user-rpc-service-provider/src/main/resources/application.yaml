@@ -1,9 +1,9 @@
 # dubbo 配置项，对应 DubboConfigurationProperties 配置类
 dubbo:
-  # Dubbo 应用配置
+  # Dubbo 应用信息配置
   application:
     name: user-service-provider # 应用名
-  # Dubbo 注册中心配
+  # Dubbo 注册中心配置
   registry:
     address: zookeeper://127.0.0.1:2181 # 注册中心地址。个鞥多注册中心，可见 http://dubbo.apache.org/zh-cn/docs/user/references/registry/introduction.html 文档。
   # Dubbo 服务提供者协议配置

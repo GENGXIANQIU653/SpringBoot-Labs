@@ -4,6 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ImportResource;
 
+
+/**
+ * 在类上，添加 @ImportResource 注解，引入 dubbo.xml 配置文件
+ */
 @SpringBootApplication
 @ImportResource("classpath:dubbo.xml")
 public class ProviderApplication {

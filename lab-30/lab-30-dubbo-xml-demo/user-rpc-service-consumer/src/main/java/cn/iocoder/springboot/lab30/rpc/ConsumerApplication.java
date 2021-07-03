@@ -14,6 +14,9 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 
+/**
+ * 添加 @ImportResource 注解，引入 dubbo.xml 配置文件
+ */
 @SpringBootApplication
 @ImportResource("classpath:dubbo.xml")
 public class ConsumerApplication {
@@ -28,6 +31,9 @@ public class ConsumerApplication {
 
         private final Logger logger = LoggerFactory.getLogger(getClass());
 
+        /**
+         * 使用 @Resource 注解，引用通过 <dubbo:reference /> 配置的引用的 UserRpcService 服务对应的 UserRpcService Bean
+         */
         @Resource
         private UserRpcService userRpcService;
 
